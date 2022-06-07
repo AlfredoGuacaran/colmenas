@@ -4,10 +4,10 @@ import CosechaModel from '../models/cosecha.js';
 export const createCosecha = async (req, res) => {
   try {
     const cosecha = req.body;
+    console.log(req.body);
+
     const newCosecha = new CosechaModel(cosecha);
-    console.log(newCosecha);
     await newCosecha.save();
-    console.log(newCosecha);
     res.status(201).json(newCosecha);
   } catch (error) {
     res.status(409).json({ message: error.message });

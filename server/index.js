@@ -15,7 +15,7 @@ const PORT = process.env.PORT || 5000;
 
 app.use('/', cosechasRoutes);
 
-const uri = 'mongodb+srv://alfredoguacaran:XXXXXXX@cluster0.1ayw3.mongodb.net/?retryWrites=true&w=majority';
+const uri = 'mongodb+srv://alfredoguacaran:XXXXXXXMONGODB_KEYXXXXXX@cluster0.1ayw3.mongodb.net/?retryWrites=true&w=majority';
 
 mongoose
   .connect(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 })
